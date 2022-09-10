@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {Avatar, Divider, Flex, Heading, IconButton} from '@chakra-ui/react'
+import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import '../assets/ViperPfP.jpg'
 
 
@@ -17,10 +18,14 @@ export default function Navbar(){
             justifyContents='space-between' 
         >        
             <Flex>
-                <Heading> Icons </Heading>
+                <Heading mt = {4}> Icons </Heading>
                 <IconButton
                     background = "none"
                     mt = {5}
+                    _hover={{ background: 'none'}}
+                    onClick = {() =>{
+
+                    }}
                 />
             </Flex>
             <Flex
