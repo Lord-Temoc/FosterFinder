@@ -1,14 +1,10 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
-<<<<<<< Updated upstream
 import { Flex, Text, Center } from "@chakra-ui/react";
 import styles from "../styles/index.module.css";
 import GoogleButton from "react-google-button";
-=======
 import Resources from "../components/resources";
-import { Flex } from "@chakra-ui/react";
 
->>>>>>> Stashed changes
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import Search from "../components/search";
