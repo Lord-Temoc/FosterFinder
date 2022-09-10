@@ -6,6 +6,7 @@ import '../assets/ViperPfP.jpg'
 
 
 export default function ProfileComponent(){
+    
     return (
         <>
         <Flex
