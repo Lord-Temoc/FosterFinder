@@ -11,17 +11,17 @@ export default function Navbar(){
         <>
         <Flex
             pos='sticky'
-            left='7'
+            left='0'
             h='70vh'
             marginTop='2.5vh'
             boxShadow='0 4px 12px 0 rgba(0,0,0, 0.5)'
-            w='150px'
+            w='140px'
             flexDir='column'
             justifyContents='space-between' 
-            backgroundColor='purple'
+            border-radius="15"
         >        
             <Flex>
-                <Heading mt = {4} alignContent="center"> Icons </Heading>
+                <Heading mt = {4} alignContent="center"> Pages </Heading>
             </Flex>
             <Flex
                 p='5%'

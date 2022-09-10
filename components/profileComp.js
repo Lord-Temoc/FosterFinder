@@ -11,21 +11,22 @@ export default function ProfileComponent() {
     <>
       <Flex
         pos="sticky"
-        left="7"
+        left="0"
         h="15vh"
         marginTop="2.5vh"
-        boxShadow="0 4px 12px 0 rgba(0,0,0, 0.5)"
-        w="200px"
+        boxShadow="0 0px 12px 0 rgba(0,0,0, 0.5)"
+        w="140px"
         flexDir="column"
         justifyContents="space-between"
       >
-        <Flex mt={7} align="center">
-          <Avatar left="2" size="sm" src={session?.user.image} />
+        <Flex mt={7} align="center" flexDir={"column"}>
+          <Avatar left="0" size="sm" src={session?.user.image} />
           <Flex flexDir="column" ml={4}>
             <Heading as="h3" size="sm">
               {session?.user.name}
             </Heading>
             <p color="gray"> Admin </p>
+            <button onClick={signOut}>Sign out</button>
           </Flex>
         </Flex>
       </Flex>

@@ -15,29 +15,28 @@ import {
 
   } from '@chakra-ui/react'
 import '../assets/ViperPfP.jpg'
+import "../pages/index.js"
+import Router from 'next/router'
 
 
 export default function NavItem (){
 
-    return(<><Flex
+    return(<>
+    <Flex
         mt={30}
         flexDir="column"
         w='100%'
         >
-            <Menu>
-                
-                    <MenuButton>
-                        <Flex>
-                            <ButtonGroup variant='outline'  spacing='6' flexDir='column'>
-                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Home</Button>
-                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Events</Button>
-                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Resources</Button>
-                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Contacts</Button>
-                            </ButtonGroup>
+              <Flex>
+                            <div class="btn-group">
+                            
+                                <Button onClick={() => Router.push('/')} width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Home</Button>
+                                <Button onClick={() => Router.push('/Events')} width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Events</Button>
+                                <Button onClick={() => Router.push('/Resources')} width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Resources</Button>
+                                <Button onClick={() => Router.push('/Contacts')} width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Contacts</Button>
+                            </div>
                         </Flex>
-                    </MenuButton>
 
-            </Menu>
 
         </Flex>
     </>
@@ -45,28 +44,3 @@ export default function NavItem (){
         
         
 }
-/*
-<><Flex
-            mt={30}
-            flexDir="column"
-            w='100%'
-            >
-                <Menu>
-                    
-                        <MenuButton>
-                            <Flex>
-                                <ButtonGroup variant='outline'  spacing='6' flexDir='column'>
-                                    <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Home</Button>
-                                    <Button width={125} colorScheme='blue' marginTop={5}>Events</Button>
-                                    <Button width={125} colorScheme='blue' marginTop={5}>Resources</Button>
-                                    <Button width={125} colorScheme='blue' marginTop={5}>Contacts</Button>
-                                </ButtonGroup>
-                            </Flex>
-                        </MenuButton>
-
-                </Menu>
-
-            </Flex>
-        </>
-    )
-    */
