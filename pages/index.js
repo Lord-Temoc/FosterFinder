@@ -4,6 +4,7 @@ import { Flex } from "@chakra-ui/react";
 
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
+import Search from "../components/search";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -18,6 +19,9 @@ export default function Home() {
         <div>
           Signed in as {session?.user.email} <br />
           <button onClick={() => signOut()}>Sign out</button>
+        </div>
+        <div>
+          <Search />
         </div>
       </>
     );

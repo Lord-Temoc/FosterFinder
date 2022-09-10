@@ -14,8 +14,8 @@ export default function Navbar(){
             left='7'
             h='70vh'
             marginTop='2.5vh'
-            boxShadow='0 4px 12px 0 rgba(0,0,0, 1)'
-            w='200px'
+            boxShadow='0 4px 12px 0 rgba(0,0,0, 0.5)'
+            w='150px'
             flexDir='column'
             justifyContents='space-between' 
         >        

@@ -16,10 +16,37 @@ import {
   } from '@chakra-ui/react'
 import '../assets/ViperPfP.jpg'
 
+
 export default function NavItem (){
 
-    return(
-        <><Flex
+    return(<><Flex
+        mt={30}
+        flexDir="column"
+        w='100%'
+        >
+            <Menu>
+                
+                    <MenuButton>
+                        <Flex>
+                            <ButtonGroup variant='outline'  spacing='6' flexDir='column'>
+                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Home</Button>
+                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Events</Button>
+                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Resources</Button>
+                                <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Contacts</Button>
+                            </ButtonGroup>
+                        </Flex>
+                    </MenuButton>
+
+            </Menu>
+
+        </Flex>
+    </>
+)
+        
+        
+}
+/*
+<><Flex
             mt={30}
             flexDir="column"
             w='100%'
@@ -28,42 +55,18 @@ export default function NavItem (){
                     
                         <MenuButton>
                             <Flex>
-                                <Button colorScheme='teal' variant='ghost'>
-                                    Button  
-                                </Button>
+                                <ButtonGroup variant='outline'  spacing='6' flexDir='column'>
+                                    <Button width={125} colorScheme='blue' marginTop={5} marginLeft={0}>Home</Button>
+                                    <Button width={125} colorScheme='blue' marginTop={5}>Events</Button>
+                                    <Button width={125} colorScheme='blue' marginTop={5}>Resources</Button>
+                                    <Button width={125} colorScheme='blue' marginTop={5}>Contacts</Button>
+                                </ButtonGroup>
                             </Flex>
                         </MenuButton>
-                    
-                    <Link>
-                        <MenuButton>
-                            <Flex>
-                                <Button colorScheme='teal' variant='ghost'>
-                                    Button  
-                                </Button>
-                            </Flex>
-                        </MenuButton>
-                    </Link>
-                    <Link>
-                        <MenuButton>
-                            <Flex>
-                                <Button colorScheme='teal' variant='ghost'>
-                                    Button  
-                                </Button>
-                            </Flex>
-                        </MenuButton>
-                    </Link>
-                    <Link>
-                        <MenuButton>
-                            <Flex>
-                                <Button colorScheme='teal' variant='ghost'>
-                                    Button  
-                                </Button>
-                            </Flex>
-                        </MenuButton>
-                    </Link>
+
                 </Menu>
 
             </Flex>
         </>
     )
-}
+    */
