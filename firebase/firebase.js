@@ -70,3 +70,5 @@ const getPostByUser = async (user) => {
 
   return userPosts;
 };
+
+module.exports = { getAllPosts };
