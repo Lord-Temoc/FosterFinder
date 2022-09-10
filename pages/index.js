@@ -19,10 +19,9 @@ export default function Home() {
   }
   return (
     <>
+      <div>{/* <Navbar /> */}</div>
       <div>
-        <Navbar />
-        Signed in as {session?.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        Not signed in <br /> <button onClick={() => signIn()}>Sign in</button>
       </div>
     </>
   );
