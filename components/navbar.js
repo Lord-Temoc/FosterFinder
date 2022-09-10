@@ -1,4 +1,4 @@
-
+import { useState } from 'react'
 import {Avatar, Divider, Flex, Heading, IconButton} from '@chakra-ui/react'
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
@@ -18,6 +18,7 @@ export default function Navbar(){
             w='200px'
             flexDir='column'
             justifyContents='space-between' 
+            backgroundColor='purple'
         >        
             <Flex>
                 <Heading mt = {4} alignContent="center"> Icons </Heading>

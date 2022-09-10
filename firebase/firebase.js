@@ -5,6 +5,10 @@ import { getDatabase } from "firebase/database";
 // const { getDatabase } = require("firebase/database");
 // const { getFirestore } = require("firebase/firestore");
 
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
