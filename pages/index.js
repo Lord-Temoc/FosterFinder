@@ -12,6 +12,10 @@ export default function Home() {
     return (
       <>
         <div>
+          <ProfileComponent />
+          <Navbar />
+        </div>
+        <div>
           Signed in as {session?.user.email} <br />
           <button onClick={() => signOut()}>Sign out</button>
         </div>
@@ -21,8 +25,6 @@ export default function Home() {
   return (
     <>
       <div>
-        <ProfileComponent />
-        <Navbar />
         <div>
           Not signed in <br /> <button onClick={() => signIn()}>Sign in</button>
         </div>
