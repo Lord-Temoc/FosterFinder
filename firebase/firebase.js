@@ -23,9 +23,11 @@ import { collection, addDoc, getDocs } from "firebase/firestore";
 
 const addPost = async (username, content) => {
   try {
+    console.log(username);
+    console.log(content);
     const docRef = await addDoc(collection(db, "posts"), {
-      username: "Pranav",
-      content: "Aditta",
+      username: username,
+      content: content,
     });
 
     console.log("Document written with ID: ", docRef.id);
@@ -71,4 +73,18 @@ const getPostByUser = async (user) => {
   return userPosts;
 };
 
-module.exports = { getAllPosts };
+const getUsers = async () => {
+  const querySnapshot = await getDocs(collection(db, "users"));
+  const users = [];
+
+  querySnapshot.forEach((doc) => {
+    users.push({
+      id: doc.id,
+      data: doc.data(),
+    });
+  });
+
+  return users;
+};
+
+module.exports = { getAllPosts, getPost, getPostByUser, addPost, getUsers };

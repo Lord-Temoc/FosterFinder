@@ -20,13 +20,12 @@ export default function Home() {
   }
   return (
     <>
-      <div>{/* <Navbar /> */}</div>
       <div>
         <ProfileComponent />
         <Navbar />
         <div>
-        Not signed in <br /> <button onClick={() => signIn()}>Sign in</button>
-      </div>
+          Not signed in <br /> <button onClick={() => signIn()}>Sign in</button>
+        </div>
       </div>
     </>
   );
