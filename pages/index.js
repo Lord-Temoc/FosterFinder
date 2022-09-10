@@ -22,7 +22,7 @@ export default function Home() {
           <Search />
 
           <PostView name={session?.user.name} />
-        </div>
+         </div>
       </>
     );
   }
