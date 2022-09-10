@@ -3,6 +3,8 @@ import Navbar from "../components/navbar";
 import { Flex, Text, Center } from "@chakra-ui/react";
 import styles from "../styles/index.module.css";
 import GoogleButton from "react-google-button";
+import Resources from "../components/resources";
+
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 
@@ -15,6 +17,7 @@ export default function Home() {
         <div>
           <ProfileComponent />
           <Navbar />
+          <Resources />
         </div>
         <div>
           Signed in as {session?.user.email} <br />
