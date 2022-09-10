@@ -6,6 +6,7 @@ import GoogleButton from "react-google-button";
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import Search from "../components/search";
+import PostView from "../components/postview";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -19,6 +20,8 @@ export default function Home() {
         </div>
         <div>
           <Search />
+
+          <PostView name={session?.user.name} />
         </div>
       </>
     );

@@ -25,12 +25,14 @@ const db = getFirestore(app);
 import { collection, addDoc, getDocs } from "firebase/firestore";
 // const { collection, addDoc, getDocs } = require("firebase/firestore");
 
-const addPost = async (username, content) => {
+const addPost = async (username, title, content) => {
   try {
     console.log(username);
     console.log(content);
+    console.log(title);
     const docRef = await addDoc(collection(db, "posts"), {
       username: username,
+      title: title,
       content: content,
     });
 
