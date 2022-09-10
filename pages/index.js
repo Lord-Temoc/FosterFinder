@@ -31,8 +31,10 @@ export default function Home() {
           <div>
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
-          <div id={styles.btn}>
-            <GoogleButton onClick={() => signIn()}>Sign in</GoogleButton>
+          <div>
+            <GoogleButton id={styles.btn} onClick={() => signIn()}>
+              Sign in
+            </GoogleButton>
           </div>
         </div>
       </div>
