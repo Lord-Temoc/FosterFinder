@@ -1,13 +1,13 @@
 import Head from "next/head";
+import Navbar from '../components/navbar'
+import {Flex} from '@chakra-ui/react'
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Foster Finder</title>
-        <meta name="description" content="Foster Finder" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
+      <Navbar/>
+
     </div>
   );
 }
