@@ -3,42 +3,29 @@ import {Avatar, Divider, Flex, Heading, IconButton} from '@chakra-ui/react'
 import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import '../assets/ViperPfP.jpg'
-import NavItem from './navItem'
 
 
-export default function Navbar(){
+export default function ProfileComponent(){
     return (
         <>
         <Flex
             pos='sticky'
             left='7'
-            h='70vh'
+            h='15vh'
             marginTop='2.5vh'
+
             boxShadow='0 4px 12px 0 rgba(0,0,0, 1)'
             w='200px'
             flexDir='column'
             justifyContents='space-between' 
-        >        
-            <Flex>
-                <Heading mt = {4}> Icons </Heading>
-            </Flex>
-            <Flex
-                p='5%'
-                flexDir = 'column'
-                w = '100%'
-                alignText = 'flex-start'
-                mb={4}
-            >
- 
-                <Divider/>
-                <Flex>
-                    <NavItem/>
+        >
+                            <Flex mt = {7} align = "center"> 
+                                <Avatar left= '2' size="sm" src ="ViperPfP.jpg"/>
+                                <Flex flexDir="column" ml = {4}>
+                                    <Heading as= 'h3' size='sm' >Jhon Doe</Heading>
+                                    <p color="gray"> Admin </p>
+                                </Flex>
                 </Flex>
-                    
-            </Flex>
-        </Flex>
-
-
-        </>
-    )
-}
+        </Flex> 
+        </> 
+    )} 
