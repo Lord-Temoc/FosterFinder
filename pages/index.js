@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import { Flex } from "@chakra-ui/react";
 
 import { useSession, signIn, signOut } from "next-auth/react";
+import ProfileComponent from "../components/profileComp";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -21,7 +22,11 @@ export default function Home() {
     <>
       <div>{/* <Navbar /> */}</div>
       <div>
+        <ProfileComponent />
+        <Navbar />
+        <div>
         Not signed in <br /> <button onClick={() => signIn()}>Sign in</button>
+      </div>
       </div>
     </>
   );
