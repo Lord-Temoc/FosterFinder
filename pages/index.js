@@ -3,10 +3,9 @@ import Navbar from "../components/navbar";
 import { Flex, Text, Center } from "@chakra-ui/react";
 import styles from "../styles/index.module.css";
 import GoogleButton from "react-google-button";
-import Resources from "../components/resources";
-
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
+import Search from "../components/search";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -17,11 +16,9 @@ export default function Home() {
         <div>
           <ProfileComponent />
           <Navbar />
-          <Resources />
         </div>
         <div>
-          Signed in as {session?.user.email} <br />
-          <button onClick={() => signOut()}>Sign out</button>
+          <Search />
         </div>
       </>
     );
@@ -34,7 +31,7 @@ export default function Home() {
           <div>
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
-          <div id={styles.btn}>
+          <div>
             <GoogleButton type="dark" onClick={() => signIn()}>
               Sign in
             </GoogleButton>
