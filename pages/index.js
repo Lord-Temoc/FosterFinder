@@ -1,13 +1,29 @@
 import Head from "next/head";
-import Navbar from '../components/navbar'
-import {Flex} from '@chakra-ui/react'
+import Navbar from "../components/navbar";
+import { Flex } from "@chakra-ui/react";
+
+import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Home() {
+  const { data: session } = useSession();
+
+  if (session) {
+    return (
+      <>
+        <div>
+          Signed in as {session?.user.email} <br />
+          <button onClick={() => signOut()}>Sign out</button>
+        </div>
+      </>
+    );
+  }
   return (
-    <div>
-
-      <Navbar/>
-
-    </div>
+    <>
+      <div>
+        <Navbar />
+        Signed in as {session?.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+      </div>
+    </>
   );
 }
