@@ -2,6 +2,10 @@ import NextAuth from "next-auth/next";
 import GoogleProvider from "next-auth/providers/google";
 import { FirestoreAdapter } from "@next-auth/firebase-adapter";
 
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 export default NextAuth({
   // https://next-auth.js.org/providers
   providers: [
