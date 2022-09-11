@@ -22,13 +22,13 @@ export default function EventAccordion() {
           <h2>
             <AccordionButton bgColor={"lightblue"}>
               <Box flex="1" textAlign="left">
-                Event 1 Replace with actual event
+                Where can I find information on educational resources for toddlers? 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Here is the event 1 information
+            Go to our Resources page and in the toddler resources section click on the educational link that will take you to information about education for toddlers. 
           </AccordionPanel>
         </AccordionItem>
 
@@ -36,13 +36,13 @@ export default function EventAccordion() {
           <h2>
             <AccordionButton bgColor={"lightblue"}>
               <Box flex="1" textAlign="left">
-                Event 2 Replace with actual event
+                I’m a new foster parent and I don’t know when my newborn should start recognizing colors? 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            here is the event 2 information
+            Go to the milestones link on the newborn section of the Resources page for more information
           </AccordionPanel>
         </AccordionItem>
 
@@ -50,39 +50,39 @@ export default function EventAccordion() {
           <h2>
             <AccordionButton bgColor={"lightblue"}>
               <Box flex="1" textAlign="left">
-                Event 3 Replace with actual event
+                I’m not able to use the website in some way, how do I get my issue fixed? 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Here is the event 3 information
+            Sorry for the inconvenience, let us know in the suggestions box on the Contacts page on how we can help you
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton bgColor={"lightblue"}>
               <Box flex="1" textAlign="left">
-                Event 4 Replace with actual event
+                I’d love to give back to the community, how do I get involved? 
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Here is the event 4 information
+            Check out the Events page on our website! There’s plenty of open events to attend
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton bgColor={"lightblue"}>
               <Box flex="1" textAlign="left">
-                Event 5 Replace with actual event
+                How do I create a post for other users to see?
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Here is the event 5 information
+            Click on the Create a Post button on the Home page, enter the information you’d like to post about, and other users will be able to see it!
           </AccordionPanel>
         </AccordionItem>
       </Accordion>

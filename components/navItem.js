@@ -55,13 +55,19 @@ export default function NavItem() {
           <div class="btn-group">
             <IconButton
               onClick={() => Router.push("/")}
-              colorScheme="blue"
+              backgroundColor="#64A6BD"
+              color="white"
               marginTop={5}
               marginLeft={0}
               icon={<AiOutlineHome size="45" />}
               borderRadius="50%"
               width="10vh"
               height="10vh"
+              _hover={{
+                background: "white",
+                color: "#64A6BD",
+                border: "2px",
+              }}
             >
               Home
             </IconButton>
@@ -69,13 +75,19 @@ export default function NavItem() {
             <div>
               <IconButton
                 onClick={() => Router.push("/Events")}
-                colorScheme="blue"
+                backgroundColor="#64A6BD"
+                color="white"
                 marginTop={5}
                 marginLeft={0}
                 icon={<AiOutlineCalendar size="45" />}
                 width="10vh"
                 height="10vh"
                 borderRadius="50%"
+                _hover={{
+                  background: "white",
+                  color: "#64A6BD",
+                  border: "2px",
+                }}
               >
                 Events
               </IconButton>
@@ -83,13 +95,19 @@ export default function NavItem() {
             <div>
               <IconButton
                 onClick={() => Router.push("/Resources")}
-                colorScheme="blue"
+                backgroundColor="#64A6BD"
+                color="white"
                 marginTop={5}
                 marginLeft={0}
                 icon={<AiOutlineBook size="45" />}
                 width="10vh"
                 height="10vh"
                 borderRadius="50%"
+                _hover={{
+                  background: "white",
+                  color: "#64A6BD",
+                  border: "2px",
+                }}
               >
                 Resources
               </IconButton>
@@ -97,13 +115,19 @@ export default function NavItem() {
             <div>
               <IconButton
                 onClick={() => Router.push("/Contacts")}
-                colorScheme="blue"
+                backgroundColor="#64A6BD"
+                color="white"
                 marginTop={5}
                 marginLeft={0}
                 icon={<AiOutlineContacts size="45" />}
                 width="10vh"
                 height="10vh"
                 borderRadius="50%"
+                _hover={{
+                  background: "white",
+                  color: "#64A6BD",
+                  border: "2px",
+                }}
               >
                 Contacts
               </IconButton>

@@ -72,7 +72,17 @@ export default function PostInput(props) {
 
   return (
     <div>
-      <Button onClick={onOpen} id={styles.createPost}>
+      <Button
+        onClick={onOpen}
+        id={styles.createPost}
+        color="white"
+        backgroundColor="#64A6BD"
+        _hover={{
+          background: "white",
+          color: "#64A6BD",
+          border: "2px",
+        }}
+      >
         Create Post
       </Button>
 
@@ -95,7 +105,7 @@ export default function PostInput(props) {
                 name="title"
                 value={title}
                 onChange={handleTitleChange}
-                placeholder="Post Title"
+                placeholder="Post title"
               />
             </FormControl>
 

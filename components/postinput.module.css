@@ -1,19 +1,11 @@
 #createPost {
-  background: lightblue;
   text-align: center;
-  outline: 0px solid black;
   border-radius: 50px;
-  color: black;
   width: 49%;
   position: fixed;
   margin: auto;
   top: 30px;
   right: 25.5%;
-}
-
-#createPost:hover {
-    background-color: rgb(210, 224, 230); 
-    border: 2px lightblue;
 }
 
 #postModal {
