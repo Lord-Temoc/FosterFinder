@@ -23,10 +23,9 @@ export default function Navbar() {
         border-radius="15"
       >
         <Flex>
-          <Heading mt={4} justifyContent="center"></Heading>
+          <Heading justifyContent="center"></Heading>
         </Flex>
         <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
-          <Divider />
           <NavItem />
         </Flex>
       </Flex>
