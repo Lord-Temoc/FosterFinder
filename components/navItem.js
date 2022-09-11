@@ -41,7 +41,7 @@ import {
   PopoverAnchor,
 } from "@chakra-ui/react";
 
-export default function NavItem(props) {
+export default function NavItem() {
   return (
     <>
       <Flex mt={30} flexDir="column" w="100%">
@@ -56,6 +56,7 @@ export default function NavItem(props) {
             >
               Home
             </Button>
+
             <div>
               <Button
                 onClick={() => Router.push("/Events")}
