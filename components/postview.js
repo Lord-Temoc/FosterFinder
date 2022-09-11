@@ -16,7 +16,7 @@ export default function PostView() {
   return (
     <>
       <div>
-        <Center display="flex" flexDirection="column">
+        <Center display="flex" flexDirection="column" overflowY="scroll">
           {posts.map((post) => (
             <Box
               border="2px"

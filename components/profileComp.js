@@ -10,12 +10,12 @@ export default function ProfileComponent() {
   return (
     <>
       <Flex
-        pos="sticky"
+        pos="fixed"
         left="0"
-        h="15vh"
+        h="20%"
         marginTop="2.5vh"
         boxShadow="0 0px 12px 0 rgba(0,0,0, 0.5)"
-        w="140px"
+        w="10%"
         flexDir="column"
         justifyContents="space-between"
       >
@@ -26,8 +26,9 @@ export default function ProfileComponent() {
               {session?.user.name}
             </Heading>
             <p color="gray"> Admin </p>
-            <button onClick={signOut}>Sign out</button>
           </Flex>
+
+          <button onClick={signOut}>Sign out</button>
         </Flex>
       </Flex>
     </>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
+
 import EventAccordion from "../components/eventsComponent";
 import { Flex, Text, Center } from "@chakra-ui/react";
 import styles from "../styles/index.module.css";
@@ -8,7 +8,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import PostInput from "../components/postinput";
 import PostView from "../components/postview";
-import Chat from "../components/chat";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -39,9 +38,14 @@ export default function Home() {
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
           <div id={styles.btn}>
-            <GoogleButton type="dark" onClick={() => signIn()}>
-              Sign in
-            </GoogleButton>
+            <IconButton
+              onClick={() => signIn()}
+              icon={<BsGoogle />}
+              color="white"
+              variant="outline"
+              backgroundOpacity="0"
+              _hover={{ background: "white", color: "#64a6bd" }}
+            />
           </div>
         </div>
       </div>
