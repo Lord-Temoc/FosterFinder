@@ -9,13 +9,9 @@ export default function PostInput(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const socialPost = {
-      title: title,
-      content: content,
-      username: props.name,
-    };
-    // console.log(socialPost);
-    // axios.post("http://localhost:3000/api/posts", { socialPost })
+    if (title === "" || content === "") {
+      alert("Please fill out all fields");
+    }
 
     axios.post(
       "http://localhost:3000/api/posts?title=" +
