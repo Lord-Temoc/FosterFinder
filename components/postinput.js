@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
 
-export default function PostView(props) {
+export default function PostInput(props) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
