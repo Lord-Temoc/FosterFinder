@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Avatar, Divider, Flex, Heading, IconButton } from "@chakra-ui/react";
 import { HomeIcon, PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import "../assets/ViperPfP.jpg";
 import NavItem from "./navItem";
 
 export default function Navbar() {

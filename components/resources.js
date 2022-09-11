@@ -11,7 +11,6 @@ import {
   Divider,
   Button,
 } from "@chakra-ui/react";
-import Resources from "../pages/Resources";
 import styles from "./postinput.module.css";
 import { Wrap, WrapItem } from "@chakra-ui/react";
 
