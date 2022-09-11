@@ -15,6 +15,7 @@ import {
   ModalCloseButton,
   useDisclosure,
   Textarea,
+  Box,
 } from "@chakra-ui/react";
 import styles from "./postinput.module.css";
 

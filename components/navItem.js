@@ -44,12 +44,12 @@ import {
 export default function NavItem() {
   return (
     <>
-      <Flex mt={30} flexDir="column" w="100%">
+      <Flex flexDir="column" w="auto" margin="auto">
         <Flex>
           <div class="btn-group">
             <Button
               onClick={() => Router.push("/")}
-              width='100%'
+              width="100%"
               colorScheme="blue"
               marginTop={5}
               marginLeft={0}
@@ -60,7 +60,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Events")}
-                width='100%'
+                width="100%"
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -71,7 +71,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Resources")}
-                width='100%'
+                width="100%"
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -82,7 +82,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Contacts")}
-                width='100%'
+                width="100%"
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}

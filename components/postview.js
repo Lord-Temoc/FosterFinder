@@ -16,14 +16,14 @@ export default function PostView() {
   return (
     <>
       <div>
-        <Center display="flex" flexDirection="column" overflowY="scroll">
+        <Center display="flex" flexDirection="column">
           {posts.map((post) => (
             <Box
               border="2px"
               borderRadius="25px"
               key={post.id}
               width="50%"
-              marginTop="50"
+              marginTop="100"
               padding="10"
             >
               <Text fontSize="3xl">{post.data.title}</Text>

@@ -1,12 +1,13 @@
 #createPost {
   background: white;
-  outline: 3px solid lightgray;
-  border-radius: 20px;
-  color: gray;
-  width: 40%;
-  position: absolute;
-  top: 100px;
-  right: 30%;
+  outline: 3px solid black;
+  border-radius: 50px;
+  color: black;
+  width: 49%;
+  position: fixed;
+  margin: auto;
+  top: 30px;
+  right: 25.5%;
 }
 
 #postModal {

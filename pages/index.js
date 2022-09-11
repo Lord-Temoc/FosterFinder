@@ -8,8 +8,9 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import Navbar from "../components/navbar";
 import PostView from "../components/postview";
+import { Icon, createIcon, IconButton, Divider } from "@chakra-ui/react";
+import { BsGoogle } from "react-icons/bs";
 import PostInput from "../components/postinput";
-import { Icon, createIcon } from "@chakra-ui/react";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -23,10 +24,10 @@ export default function Home() {
             <Navbar />
             <EventAccordion />
           </div>
-          <div>
+          <Flex direction="column">
             <PostInput name={session?.user.name} />
             <PostView />
-          </div>
+          </Flex>
         </div>
       </>
     );
@@ -40,7 +41,14 @@ export default function Home() {
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
           <div id={styles.btn}>
-            {/* <IconButton onClick={() => signIn()} icon={}/> */}
+            <IconButton
+              onClick={() => signIn()}
+              icon={<BsGoogle />}
+              color="white"
+              variant="outline"
+              backgroundOpacity="0"
+              _hover={{ background: "white", color: "#64a6bd" }}
+            />
           </div>
         </div>
       </div>
