@@ -54,9 +54,7 @@ export default function NavItem(props) {
               marginTop={5}
               marginLeft={0}
             >
-              <h>
-                {props.icon} {props.word}
-              </h>
+              Home
             </Button>
             <div>
               <Button
@@ -66,7 +64,6 @@ export default function NavItem(props) {
                 marginTop={5}
                 marginLeft={0}
               >
-                <CalendarIcon />
                 Events
               </Button>
             </div>
