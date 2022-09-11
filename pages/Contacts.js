@@ -102,6 +102,9 @@ export default function Events() {
               value="Submit"
               onClick={submitMessageBox}
               width="100%"
+              bgColor={"#64A6BD"}
+              color={"white"}
+              _hover={{ background: "white", color: "#64A6BD", border: "2px" }}
             >
               Submit
             </Button>

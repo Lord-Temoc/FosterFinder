@@ -29,13 +29,14 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
                 <Button
                   variant="link "
                   fontSize={"20"}
-                  bg="blue.500"
+                  bgColor={"#64A6BD"}
                   textAlign={"center"}
                   textColor="white"
                 >
@@ -72,6 +73,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -81,6 +83,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Trust-Based Relational Intervention
                 </Button>
@@ -115,6 +118,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -124,6 +128,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   National Adoption Day 2022
                 </Button>
@@ -158,6 +163,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -167,6 +173,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Trust-Based Relational Intervention
                 </Button>
@@ -201,6 +208,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -210,6 +218,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Webinar: Understanding Autism in Girls
                 </Button>
@@ -239,7 +248,7 @@ export default function EventsGrid() {
             borderRadius={"15"}
             w="100%"
             h="20"
-            bg="blue.500"
+            bgColor={"#64A6BD"}
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
@@ -252,6 +261,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Parent Huddle Support Group
                 </Button>
@@ -286,6 +296,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -295,6 +306,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Orphan Initiative Interest Meeting
                 </Button>
@@ -328,6 +340,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -337,6 +350,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Webinar: Understanding Autism
                 </Button>
@@ -370,6 +384,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -379,6 +394,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Webinar: Navigating the Adult Systems
                 </Button>
@@ -413,6 +429,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
             fontSize={"25"}
+            bgColor={"#64A6BD"}
           >
             <Popover>
               <PopoverTrigger>
@@ -422,6 +439,7 @@ export default function EventsGrid() {
                   bg="blue.500"
                   textAlign={"center"}
                   textColor="white"
+                  bgColor={"#64A6BD"}
                 >
                   Webinar: The Crossroads of ASD and Mental Health
                 </Button>

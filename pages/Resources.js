@@ -37,7 +37,13 @@ export default function Resources() {
             marginTop={10}
             gap={8}
           >
-            <GridItem colStart={2} colEnd={3} h="700" bg="blue.500">
+            <GridItem
+              colStart={2}
+              colEnd={3}
+              h="700"
+              bg="blue.500"
+              bgColor={"#64A6BD"}
+            >
               <Text fontSize="3xl" align="center" color="white" marginTop="10">
                 Newborn Resources
               </Text>
@@ -102,7 +108,13 @@ export default function Resources() {
                 </Link>
               </Button>
             </GridItem>
-            <GridItem colStart={3} colEnd={4} h="700" bg="blue.500">
+            <GridItem
+              colStart={3}
+              colEnd={4}
+              h="700"
+              bg="blue.500"
+              bgColor={"#64A6BD"}
+            >
               <Text fontSize="3xl" align="center" color="white" marginTop="10">
                 Toddler Resources
               </Text>
@@ -167,7 +179,13 @@ export default function Resources() {
                 </Link>
               </Button>
             </GridItem>
-            <GridItem colStart={4} colEnd={5} h="700" bg="blue.500">
+            <GridItem
+              colStart={4}
+              colEnd={5}
+              h="700"
+              bg="blue.500"
+              bgColor={"#64A6BD"}
+            >
               <Text fontSize="3xl" align="center" color="white" marginTop="10">
                 Teenage Resources
               </Text>
@@ -232,7 +250,13 @@ export default function Resources() {
                 </Link>
               </Button>
             </GridItem>
-            <GridItem colStart={5} colEnd={6} h="700" bg="blue.500">
+            <GridItem
+              colStart={5}
+              colEnd={6}
+              h="700"
+              bg="blue.500"
+              bgColor={"#64A6BD"}
+            >
               <Text fontSize="3xl" align="center" color="white" marginTop="10">
                 Young Adult Resources
               </Text>

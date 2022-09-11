@@ -59,6 +59,8 @@ export default function PostInput(props) {
           "&avatar=" +
           props.avatar
       );
+
+      window.location.reload(false);
     }
   };
 
