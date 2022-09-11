@@ -1,0 +1,22 @@
+#createPost {
+    background: white;
+    outline: 3px solid lightgray;
+    border-radius: 20px;
+    color: gray;
+    width: 1000px;
+    position : absolute;
+    top : 100px;
+    right : 500px;
+
+}
+
+#postModal{
+    background: white;
+    outline: 3px solid lightgray;
+    border-radius: 20px;
+    color: gray;
+    width: 1000px;
+    position : absolute;
+    top : 100px;
+    right : 500px;
+}
