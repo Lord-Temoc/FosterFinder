@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <Flex
-        pos="sticky"
+        pos="fixed"
         left="0"
         h="70vh"
         marginTop="2.5vh"

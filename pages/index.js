@@ -9,6 +9,7 @@ import ProfileComponent from "../components/profileComp";
 import Navbar from "../components/navbar";
 import PostView from "../components/postview";
 import PostInput from "../components/postinput";
+import { Icon, createIcon } from "@chakra-ui/react";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -39,9 +40,7 @@ export default function Home() {
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
           <div id={styles.btn}>
-            <GoogleButton type="dark" onClick={() => signIn()}>
-              Sign in
-            </GoogleButton>
+            <IconButton onClick={() => signIn()} icon={}/>
           </div>
         </div>
       </div>
