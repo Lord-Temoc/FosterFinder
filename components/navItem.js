@@ -49,7 +49,7 @@ export default function NavItem(props) {
           <div class="btn-group">
             <Button
               onClick={() => Router.push(props.url)}
-              width={125}
+              width='100%'
               colorScheme="blue"
               marginTop={5}
               marginLeft={0}
@@ -59,7 +59,7 @@ export default function NavItem(props) {
             <div>
               <Button
                 onClick={() => Router.push("/Events")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -70,7 +70,7 @@ export default function NavItem(props) {
             <div>
               <Button
                 onClick={() => Router.push("/Resources")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -81,7 +81,7 @@ export default function NavItem(props) {
             <div>
               <Button
                 onClick={() => Router.push("/Contacts")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}

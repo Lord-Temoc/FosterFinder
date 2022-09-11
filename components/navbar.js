@@ -11,10 +11,10 @@ export default function Navbar() {
       <Flex
         pos="fixed"
         left="0"
-        h="70vh"
+        h="60%"
         marginTop="2.5vh"
         boxShadow="0 4px 12px 0 rgba(0,0,0, 0.5)"
-        w="140px"
+        w="10%"
         flexDir="column"
         justifyContents="space-between"
         border-radius="15"
