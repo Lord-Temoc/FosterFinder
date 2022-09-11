@@ -98,4 +98,26 @@ const getUsers = async () => {
   return users;
 };
 
-module.exports = { getAllPosts, getPost, getPostByUser, addPost, getUsers };
+const setMessage = async (email, title, content, category) => {
+  try {
+    const docRef = await addDoc(collection(db, "messages"), {
+      email: email,
+      title: title,
+      content: content,
+      category: category,
+    });
+
+    console.log("Document written with ID: ", docRef.id);
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+};
+
+module.exports = {
+  getAllPosts,
+  getPost,
+  getPostByUser,
+  addPost,
+  getUsers,
+  setMessage,
+};
