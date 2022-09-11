@@ -8,7 +8,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import Navbar from "../components/navbar";
 import PostView from "../components/postview";
-import { Icon, createIcon, IconButton } from "@chakra-ui/react";
+import { Icon, createIcon, IconButton, Divider } from "@chakra-ui/react";
 import { BsGoogle } from "react-icons/bs";
 import PostInput from "../components/postinput";
 
@@ -24,10 +24,10 @@ export default function Home() {
             <Navbar />
             <EventAccordion />
           </div>
-          <div>
+          <Flex direction="column">
             <PostInput name={session?.user.name} />
             <PostView />
-          </div>
+          </Flex>
         </div>
       </>
     );
