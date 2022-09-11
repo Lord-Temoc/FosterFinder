@@ -8,6 +8,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import PostInput from "../components/postinput";
 import PostView from "../components/postview";
+import Chat from "../components/chat";
 
 export default function Home() {
   const { data: session } = useSession();
