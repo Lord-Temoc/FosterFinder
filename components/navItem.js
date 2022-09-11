@@ -41,65 +41,21 @@ import {
   PopoverAnchor,
 } from "@chakra-ui/react";
 
-export default function NavItem() {
+export default function NavItem(props) {
   return (
     <>
       <Flex mt={30} flexDir="column" w="100%">
         <Flex>
           <div class="btn-group">
-            <Popover>
-              <PopoverTrigger PopoverTrigger="hover">
-                <Button
-                  onClick={() => Router.push("/")}
-                  width={125}
-                  colorScheme="blue"
-                  marginTop={5}
-                  marginLeft={0}
-                >
-                  Home
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverArrow />
-                <PopoverCloseButton />
-                <PopoverHeader>Home</PopoverHeader>
-              </PopoverContent>
-            </Popover>
-
-            <div>
-              <Button
-                onClick={() => Router.push("/Events")}
-                width={125}
-                colorScheme="blue"
-                marginTop={5}
-                marginLeft={0}
-              >
-                <CalendarIcon />
-                Events
-              </Button>
-            </div>
-            <div>
-              <Button
-                onClick={() => Router.push("/Resources")}
-                width={125}
-                colorScheme="blue"
-                marginTop={5}
-                marginLeft={0}
-              >
-                Resources
-              </Button>
-            </div>
-            <div>
-              <Button
-                onClick={() => Router.push("/Contacts")}
-                width={125}
-                colorScheme="blue"
-                marginTop={5}
-                marginLeft={0}
-              >
-                Contacts
-              </Button>
-            </div>
+            <Button
+              onClick={() => Router.push(props.url)}
+              width={125}
+              colorScheme="blue"
+              marginTop={5}
+              marginLeft={0}
+            >
+              <h>{props.icon} {props.word}</h>
+            </Button>
           </div>
         </Flex>
       </Flex>
