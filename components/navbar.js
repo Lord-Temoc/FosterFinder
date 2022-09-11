@@ -12,6 +12,7 @@ export default function Navbar() {
         pos="fixed"
         left="0"
         h="60%"
+        top="25%"
         marginTop="2.5vh"
         boxShadow="0 4px 12px 0 rgba(0,0,0, 0.5)"
         w="10%"
@@ -20,9 +21,12 @@ export default function Navbar() {
         border-radius="15"
       >
         <Flex>
-          <Heading mt={4} justifyContent="center"> Pages </Heading>
-          </Flex>
-          <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
+          <Heading mt={4} justifyContent="center">
+            {" "}
+            Pages{" "}
+          </Heading>
+        </Flex>
+        <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
           <Divider />
           <NavItem />
         </Flex>
