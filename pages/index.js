@@ -9,6 +9,8 @@ import ProfileComponent from "../components/profileComp";
 //import Search from "../components/search";
 import PostInput from "../components/postinput";
 import PostView from "../components/postview";
+import Chat from "../components/chat";
+
 export default function Home() {
   const { data: session } = useSession();
 
@@ -17,13 +19,9 @@ export default function Home() {
       <>
         <div>
           <div>
-          
             <ProfileComponent />
             <Navbar />
             <EventAccordion />
-
- 
-
           </div>
           <div>
             <PostInput name={session?.user.name} />
