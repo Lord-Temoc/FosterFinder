@@ -48,6 +48,9 @@ export default function Events() {
         "&email=" +
         session?.user.email
     );
+
+    setTitle("");
+    setContent("");
   };
 
   return (
@@ -74,6 +77,7 @@ export default function Events() {
               name="title"
               placeholder="Title"
               onChange={setTitle}
+              value={title}
             />
           </FormControl>
 
@@ -84,6 +88,7 @@ export default function Events() {
               name="content"
               placeholder="Message content"
               onChange={setContent}
+              value={content}
             />
           </FormControl>
 
