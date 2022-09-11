@@ -19,8 +19,13 @@ export default function Home() {
       <>
         <div>
           <div>
+          
             <ProfileComponent />
             <Navbar />
+            <EventAccordion />
+
+
+
           </div>
           <div>
             <PostInput name={session?.user.name} />
