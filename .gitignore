@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 assets/ViperPfP.jpg
 .env
-*.js
+
 pages/tempCodeRunnerFile.js

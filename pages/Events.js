@@ -12,9 +12,8 @@ export default function Events() {
         <div>
           <ProfileComponent />
           <Navbar />
-            <EventsGrid />
+          <EventsGrid />
         </div>
-        
       </div>
     </>
   );
