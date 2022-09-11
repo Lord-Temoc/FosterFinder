@@ -27,14 +27,9 @@ export default function Resources() {
     return (
       <>
         <div>
-          <Button
-            onClick={() => Router.push("/")}
-            colorScheme="blue"
-            marginTop={5}
-            marginLeft={5}
-          >
-            Home
-          </Button>
+          <ProfileComponent/>
+          <Navbar/>
+          
           <Grid templateColumns="repeat(6, 1fr)" marginTop={10} gap={8}>
             <GridItem colStart={2} colEnd={3} h="700" bg="blue.500">
               <Text fontSize="3xl" align="center" color="white" marginTop="10">

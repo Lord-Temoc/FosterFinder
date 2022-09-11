@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Text, Center, Avatar, Flex } from "@chakra-ui/react";
+import { Box, Text, Center, Avatar, Flex, Image } from "@chakra-ui/react";
 
 export default function PostView() {
   const [posts, setPosts] = useState([]);
@@ -27,7 +27,11 @@ export default function PostView() {
               padding="10"
             >
               <Flex>
-                <Avatar size="sm" name={post.data.avatar} />
+                <Avatar
+                  size="sm"
+                  src={post.data.avatar}
+                  name={post.data.username}
+                />
                 <Text paddingLeft={2} mt={1} fontSize="small">
                   {post.data.username}
                 </Text>

@@ -11,7 +11,7 @@ export default function ProfileComponent() {
     <>
       <Flex
         pos="fixed"
-        h="20%"
+        h="auto"
         marginTop="2.5vh"
         marginLeft="5"
         w="auto"
@@ -19,7 +19,11 @@ export default function ProfileComponent() {
         justifyContents="space-between"
       >
         <Flex mt={4} align="center" flexDir={"column"}>
-          <Avatar size="lg" src={session?.user.image} />
+          <Avatar
+            size="lg"
+            src={session?.user.image}
+            name={session?.user.name}
+          />
           <Flex flexDir="column" ml={5} mr={5}>
             <Heading as="h3" size="md">
               {session?.user.name}
