@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import firebase from "firebase/app";
+
 // const { initializeApp } = require("firebase/app");
 // const { getDatabase } = require("firebase/database");
 // const { getFirestore } = require("firebase/firestore");
@@ -18,17 +20,20 @@ const firebaseConfig = {
   measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
+console.log("Firebase initialized");
 const app = initializeApp(firebaseConfig);
+
 const db = getFirestore(app);
 
 import { collection, addDoc, getDocs } from "firebase/firestore";
 // const { collection, addDoc, getDocs } = require("firebase/firestore");
 
 const addPost = async (username, title, content) => {
+  console.log(username);
+  console.log(content);
+  console.log(title);
+
   try {
-    console.log(username);
-    console.log(content);
-    console.log(title);
     const docRef = await addDoc(collection(db, "posts"), {
       username: username,
       title: title,

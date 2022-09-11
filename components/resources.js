@@ -1,9 +1,5 @@
-// import { useState } from 'react'
-// import {Avatar, Divider, Flex, Heading, IconButton} from '@chakra-ui/react'
-// import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
-// import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-// import '../assets/ViperPfP.jpg'
-// import NavItem from './navItem'
+import { useState } from "react";
+import { Box } from "@chakra-ui/react";
 
 
 // export default function Resources(){

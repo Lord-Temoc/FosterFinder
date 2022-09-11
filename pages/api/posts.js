@@ -3,9 +3,9 @@ import { getAllPosts, addPost } from "../../firebase/firebase";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const username = req.query.username;
-    const title = req.query.title;
-    const content = req.query.content;
+    const username = await req.query.username;
+    const title = await req.query.title;
+    const content = await req.query.content;
 
     await addPost(username, title, content);
 

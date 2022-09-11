@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
 
 export default function PostView(props) {
   const [title, setTitle] = useState("");
@@ -8,13 +9,22 @@ export default function PostView(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const post = {
+    const socialPost = {
       title: title,
       content: content,
       username: props.name,
     };
+    // console.log(socialPost);
+    // axios.post("http://localhost:3000/api/posts", { socialPost })
 
-    axios.post("http://localhost:3000/api/posts", post);
+    axios.post(
+      "http://localhost:3000/api/posts?title=" +
+        title +
+        "&username=" +
+        props.name +
+        "&content=" +
+        content
+    );
   };
 
   const handleTitleChange = (event) => {
@@ -29,25 +39,23 @@ export default function PostView(props) {
     <div>
       <h1>Post View</h1>
 
-      <form>
-        <label>
-          Title:
-          <input
-            type="text"
-            name="title"
-            value={title}
-            onChange={handleTitleChange}
-          />
-          Content:
-          <input
-            type="text"
-            name="content"
-            value={content}
-            onChange={handleContentChange}
-          />
-        </label>
-        <input type="submit" value="Submit" onClick={handleSubmit} />
-      </form>
+      <FormControl>
+        <FormLabel>Title:</FormLabel>
+        <Input
+          type="text"
+          name="title"
+          value={title}
+          onChange={handleTitleChange}
+        />
+        <FormLabel>Content:</FormLabel>
+        <Input
+          type="text"
+          name="content"
+          value={content}
+          onChange={handleContentChange}
+        />
+        <Input type="submit" value="Submit" onClick={handleSubmit} />
+      </FormControl>
     </div>
   );
 }
