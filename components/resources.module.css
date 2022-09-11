@@ -1,0 +1,7 @@
+#gridStyle {
+    position : absolute;
+    top : 100;
+    right : 500;
+    outline: 3px solid lightgray;
+    color: gray;
+}
