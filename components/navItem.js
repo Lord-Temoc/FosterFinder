@@ -54,8 +54,44 @@ export default function NavItem(props) {
               marginTop={5}
               marginLeft={0}
             >
-              <h>{props.icon} {props.word}</h>
+              <h>
+                {props.icon} {props.word}
+              </h>
             </Button>
+            <div>
+              <Button
+                onClick={() => Router.push("/Events")}
+                width={125}
+                colorScheme="blue"
+                marginTop={5}
+                marginLeft={0}
+              >
+                <CalendarIcon />
+                Events
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => Router.push("/Resources")}
+                width={125}
+                colorScheme="blue"
+                marginTop={5}
+                marginLeft={0}
+              >
+                Resources
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => Router.push("/Contacts")}
+                width={125}
+                colorScheme="blue"
+                marginTop={5}
+                marginLeft={0}
+              >
+                Contacts
+              </Button>
+            </div>
           </div>
         </Flex>
       </Flex>
