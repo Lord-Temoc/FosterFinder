@@ -25,7 +25,7 @@ export default function Home() {
             <EventAccordion />
           </div>
           <Flex direction="column">
-            <PostInput name={session?.user.name} />
+            <PostInput name={session?.user.name} avatar={session?.user.image} />
             <PostView />
           </Flex>
         </div>

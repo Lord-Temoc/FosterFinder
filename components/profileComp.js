@@ -14,7 +14,6 @@ export default function ProfileComponent() {
         h="20%"
         marginTop="2.5vh"
         marginLeft="5"
-        boxShadow="0 0px 12px 0 rgba(0,0,0, 0.5)"
         w="auto"
         flexDir="column"
         justifyContents="space-between"

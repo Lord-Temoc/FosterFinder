@@ -13,10 +13,7 @@ export default function Navbar() {
         marginLeft="5"
         top="25%"
         marginTop="2.5vh"
-        boxShadow="0 4px 12px 0 rgba(0,0,0, 0.5)"
         width="auto"
-        paddingRight="5"
-        paddingLeft="2"
         flexDir="column"
         justifyContents="space-between"
         border-radius="15"
@@ -24,7 +21,7 @@ export default function Navbar() {
         <Flex>
           <Heading justifyContent="center"></Heading>
         </Flex>
-        <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
+        <Flex flexDir="column" w="100%" alignText="flex-start">
           <NavItem />
         </Flex>
       </Flex>

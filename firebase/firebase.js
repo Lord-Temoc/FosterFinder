@@ -28,7 +28,7 @@ const db = getFirestore(app);
 import { collection, addDoc, getDocs } from "firebase/firestore";
 // const { collection, addDoc, getDocs } = require("firebase/firestore");
 
-const addPost = async (username, title, content) => {
+const addPost = async (username, title, content, avatar) => {
   console.log(username);
   console.log(content);
   console.log(title);
@@ -38,6 +38,7 @@ const addPost = async (username, title, content) => {
       username: username,
       title: title,
       content: content,
+      avatar: avatar,
     });
 
     console.log("Document written with ID: ", docRef.id);
