@@ -44,7 +44,7 @@ import {
 export default function NavItem() {
   return (
     <>
-      <Flex mt={30} flexDir="column" w="100%">
+      <Flex flexDir="column" w="auto" margin="auto">
         <Flex>
           <div class="btn-group">
             <Button

@@ -11,20 +11,19 @@ export default function Navbar() {
       <Flex
         pos="fixed"
         left="0"
-        h="60%"
+        marginLeft="5"
         top="25%"
         marginTop="2.5vh"
         boxShadow="0 4px 12px 0 rgba(0,0,0, 0.5)"
-        w="10%"
+        width="auto"
+        paddingRight="5"
+        paddingLeft="2"
         flexDir="column"
         justifyContents="space-between"
         border-radius="15"
       >
         <Flex>
-          <Heading mt={4} justifyContent="center">
-            {" "}
-            Pages{" "}
-          </Heading>
+          <Heading mt={4} justifyContent="center"></Heading>
         </Flex>
         <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
           <Divider />
