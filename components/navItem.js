@@ -48,8 +48,8 @@ export default function NavItem() {
         <Flex>
           <div class="btn-group">
             <Button
-              onClick={() => Router.push("/")}
-              width={125}
+              onClick={() => Router.push(props.url)}
+              width='100%'
               colorScheme="blue"
               marginTop={5}
               marginLeft={0}
@@ -60,7 +60,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Events")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -71,7 +71,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Resources")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}
@@ -82,7 +82,7 @@ export default function NavItem() {
             <div>
               <Button
                 onClick={() => Router.push("/Contacts")}
-                width={125}
+                width='100%'
                 colorScheme="blue"
                 marginTop={5}
                 marginLeft={0}

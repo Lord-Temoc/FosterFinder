@@ -40,7 +40,7 @@ export default function Home() {
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
           <div id={styles.btn}>
-            {/*<IconButton onClick={() => signIn()} icon={}/>*/}
+            {/* <IconButton onClick={() => signIn()} icon={}/> */}
           </div>
         </div>
       </div>
