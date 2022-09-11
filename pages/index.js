@@ -15,13 +15,14 @@ export default function Home() {
     return (
       <>
         <div>
-          <ProfileComponent />
-          <Navbar />
+          <div>
+            <ProfileComponent />
+            <Navbar />
+          </div>
+          <div>
+            <PostView name={session?.user.name} />
+          </div>
         </div>
-        <div>
-
-          <PostView name={session?.user.name} />
-         </div>
       </>
     );
   }

@@ -7,7 +7,6 @@ export default async function handler(req, res) {
     const title = await req.query.title;
     const content = await req.query.content;
 
-    console.log("username: " + username);
     await addPost(username, title, content);
 
     res.status(200).json({ message: "Post added" });
