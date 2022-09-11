@@ -12,7 +12,7 @@ import {
   export default function EventAccordion(){
     return (
         <Flex>
-            <Accordion width={400} float="right" position="absolute" right="100" top="100">
+            <Accordion width={400} float="right" position="absolute" right="0" top="100">
                 <AccordionItem>
                     <h2>
                     <AccordionButton bgColor={"lightblue"}>
@@ -87,6 +87,6 @@ import {
 
     );
 
-
+``
 
   }
