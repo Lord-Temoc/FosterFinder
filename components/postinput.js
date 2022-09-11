@@ -1,30 +1,47 @@
 import axios from "axios";
 import { useState } from "react";
-import { FormControl, FormLabel, Input, Button } from "@chakra-ui/react";
+import {
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  useToast,
+} from "@chakra-ui/react";
 
 export default function PostInput(props) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const toast = useToast();
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const socialPost = {
-      title: title,
-      content: content,
-      username: props.name,
-    };
-    // console.log(socialPost);
-    // axios.post("http://localhost:3000/api/posts", { socialPost })
+    if (title === "" || content === "") {
+      toast({
+        title: "Error",
+        description: "Please fill out all fields",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    } else {
+      toast({
+        title: "Post added",
+        description: "Your post has been added",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
 
-    axios.post(
-      "http://localhost:3000/api/posts?title=" +
-        title +
-        "&username=" +
-        props.name +
-        "&content=" +
-        content
-    );
+      axios.post(
+        "http://localhost:3000/api/posts?title=" +
+          title +
+          "&username=" +
+          props.name +
+          "&content=" +
+          content
+      );
+    }
   };
 
   const handleTitleChange = (event) => {
