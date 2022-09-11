@@ -20,27 +20,11 @@ export default function Navbar() {
         border-radius="15"
       >
         <Flex>
-          <Heading mt={4} alignContent="center">
-            {" "}
-            Pages{" "}
-          </Heading>
-        </Flex>
-        <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
-          <Divider />
-          <Flex>
-            <div>
-              <NavItem url="/" icon={HomeIcon} word="Home" />
-            </div>
-            <div>
-              {/* <NavItem url="/Resources" icon={HomeIcon} word="Resources" /> */}
-            </div>
-            <div>
-              {/* <NavItem url="/Events" icon={HomeIcon} word="Events" /> */}
-            </div>
-            <div>
-              {/* <NavItem url="/Contacts" icon={HomeIcon} word="Contacts" /> */}
-            </div>
+          <Heading mt={4} justifyContent="center"> Pages </Heading>
           </Flex>
+          <Flex p="5%" flexDir="column" w="100%" alignText="flex-start" mb={4}>
+          <Divider />
+          <NavItem />
         </Flex>
       </Flex>
     </>
