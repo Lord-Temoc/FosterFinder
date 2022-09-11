@@ -3,10 +3,24 @@ import Navbar from "../components/navbar";
 import EventAccordion from "../components/eventsComponent";
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
-import PostView from "../components/postview";
-import Home from ".";
-import { Flex, Text, Center, Box } from "@chakra-ui/react";
+//import Search from "../components/search";
+import PostInput from "../components/postinput";
+import { useState } from "react";
+import { Box } from "@chakra-ui/react";
 
+if (session) {
+  return (
+    <>
+      <div>
+        <ProfileComponent />
+        <Navbar />
+      </div>
+      <div>
+        <PostInput name={session?.user.name} />
+      </div>
+    </>
+  );
+}
 
 export default function Resources() {
   

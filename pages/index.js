@@ -6,7 +6,8 @@ import styles from "../styles/index.module.css";
 import GoogleButton from "react-google-button";
 import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
-import PostView from "../components/postview";
+//import Search from "../components/search";
+import PostInput from "../components/postinput";
 
 
 
@@ -17,16 +18,14 @@ export default function Home() {
     return (
       <>
         <div>
-          <ProfileComponent />
-          <Navbar />
-          
+          <div>
+            <ProfileComponent />
+            <Navbar />
+          </div>
+          <div>
+            <PostInput name={session?.user.name} />
+          </div>
         </div>
-        <div>
-          <PostView name={session?.user.name} />
-         </div>
-         <div>
-              <EventAccordion />
-         </div>
       </>
     );
   }
@@ -38,7 +37,7 @@ export default function Home() {
           <div>
             <Text fontSize="6xl">Welcome to FosterFinder</Text>
           </div>
-          <div>
+          <div id={styles.btn}>
             <GoogleButton type="dark" onClick={() => signIn()}>
               Sign in
             </GoogleButton>
