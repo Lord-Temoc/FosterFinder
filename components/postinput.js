@@ -69,16 +69,16 @@ export default function PostInput(props) {
 
   return (
     <div>
-      <h1>Post View</h1>
-      <Button
-
-        onClick={onOpen}
-        id={styles.createPost}
-      >
+      <Button onClick={onOpen} id={styles.createPost}>
         Create Post
       </Button>
 
-      <Modal initialFocusRef={initialRef} isOpen={isOpen} onClose={onClose} id = {styles.postModal}>
+      <Modal
+        initialFocusRef={initialRef}
+        isOpen={isOpen}
+        onClose={onClose}
+        id={styles.postModal}
+      >
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Create your post</ModalHeader>
