@@ -8,7 +8,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import ProfileComponent from "../components/profileComp";
 import Navbar from "../components/navbar";
 import PostView from "../components/postview";
-
 import PostInput from "../components/postinput";
 
 export default function Home() {

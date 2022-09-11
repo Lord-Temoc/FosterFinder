@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Center } from "@chakra-ui/react";
 
 export default function PostView() {
   const [posts, setPosts] = useState([]);
@@ -16,17 +16,22 @@ export default function PostView() {
   return (
     <>
       <div>
-        <h1>Post View</h1>
-
-        <Box>
+        <Center display="flex" flexDirection="column">
           {posts.map((post) => (
-            <Box border="2px" borderRadius="25px" key={post.id}>
+            <Box
+              border="2px"
+              borderRadius="25px"
+              key={post.id}
+              width="50%"
+              marginTop="50"
+              padding="10"
+            >
               <Text fontSize="3xl">{post.data.title}</Text>
               <Text fontSize="xl">{post.data.content}</Text>
               <Text fontSize="small">{post.data.username}</Text>
             </Box>
           ))}
-        </Box>
+        </Center>
       </div>
     </>
   );

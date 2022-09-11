@@ -47,16 +47,15 @@ export default function NavItem() {
       <Flex mt={30} flexDir="column" w="100%">
         <Flex>
           <div class="btn-group">
-
-                <Button
-                  onClick={() => Router.push("/")}
-                  width={125}
-                  colorScheme="blue"
-                  marginTop={5}
-                  marginLeft={0}
-                >
-                  Home
-                </Button>
+            <Button
+              onClick={() => Router.push("/")}
+              width={125}
+              colorScheme="blue"
+              marginTop={5}
+              marginLeft={0}
+            >
+              Home
+            </Button>
 
             <div>
               <Button
@@ -66,7 +65,6 @@ export default function NavItem() {
                 marginTop={5}
                 marginLeft={0}
               >
-                <CalendarIcon />
                 Events
               </Button>
             </div>

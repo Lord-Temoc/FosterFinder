@@ -5,10 +5,12 @@ import Navbar from "../components/navbar";
 
 export default function Events() {
     const {data: session} = useSession();
-    return (
-            <div>
-              <ProfileComponent />
-              <Navbar />
-            </div>
-    );
+       return (
+         <>
+           <div>
+               <ProfileComponent />
+               <Navbar />
+           </div>
+         </>
+       ); 
 }
