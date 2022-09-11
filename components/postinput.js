@@ -55,7 +55,9 @@ export default function PostInput(props) {
           "&username=" +
           props.name +
           "&content=" +
-          content
+          content +
+          "&avatar=" +
+          props.avatar
       );
     }
   };

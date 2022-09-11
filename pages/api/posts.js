@@ -6,8 +6,9 @@ export default async function handler(req, res) {
     const username = await req.query.username;
     const title = await req.query.title;
     const content = await req.query.content;
+    const avatar = await req.query.avatar;
 
-    await addPost(username, title, content);
+    await addPost(username, title, content, avatar);
 
     res.status(200).json({ message: "Post added" });
   } else if (req.method === "GET") {
