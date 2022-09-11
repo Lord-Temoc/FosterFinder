@@ -25,9 +25,10 @@ export default function ProfileComponent() {
             <Heading as="h3" size="sm">
               {session?.user.name}
             </Heading>
-            <p color="gray"> Admin </p>
-            <button onClick={signOut}>Sign out</button>
+              <p color="gray"> Admin </p>
           </Flex>
+        
+            <button onClick={signOut}>Sign out</button>
         </Flex>
       </Flex>
     </>
