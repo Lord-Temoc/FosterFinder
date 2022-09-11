@@ -11,7 +11,7 @@ export default function ProfileComponent() {
     <>
       <Flex
         pos="fixed"
-        h="20%"
+        h="auto"
         marginTop="2.5vh"
         marginLeft="5"
         w="auto"
