@@ -3,11 +3,11 @@
   outline: 3px solid black;
   border-radius: 50px;
   color: black;
-  width: 50%;
+  width: 49%;
   position: fixed;
   margin: auto;
-  top: 100px;
-  right: 25%;
+  top: 30px;
+  right: 25.5%;
 }
 
 #postModal {

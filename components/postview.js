@@ -23,7 +23,7 @@ export default function PostView() {
               borderRadius="25px"
               key={post.id}
               width="50%"
-              marginTop="50"
+              marginTop="100"
               padding="10"
             >
               <Text fontSize="3xl">{post.data.title}</Text>
