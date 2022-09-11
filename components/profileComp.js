@@ -24,7 +24,7 @@ export default function ProfileComponent() {
             src={session?.user.image}
             name={session?.user.name}
           />
-          <Flex flexDir="column" ml={5} mr={5}>
+          <Flex flexDir="column" ml={5} mr={5} my="3">
             <Heading as="h3" size="md">
               {session?.user.name}
             </Heading>
@@ -34,6 +34,7 @@ export default function ProfileComponent() {
             color="black"
             variant="outline"
             backgroundOpacity="0"
+            size={"lg"}
             borderRadius="50%"
             _hover={{ background: "red", color: "white" }}
             onClick={() => signOut()}

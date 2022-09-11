@@ -16,15 +16,15 @@ export default function PostView() {
   return (
     <>
       <div>
-        <Center display="flex" flexDirection="column">
+        <Center display="flex" flexDirection="column" marginTop="100">
           {posts.map((post) => (
             <Box
               border="2px"
               borderRadius="25px"
               key={post.id}
               width="50%"
-              marginTop="100"
-              padding="10"
+              padding="25"
+              mb="10"
             >
               <Flex>
                 <Avatar

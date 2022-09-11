@@ -27,10 +27,16 @@ export default function Resources() {
     return (
       <>
         <div>
-          <ProfileComponent/>
-          <Navbar/>
-          
-          <Grid templateColumns="repeat(6, 1fr)" marginTop={10} gap={8}>
+          <ProfileComponent />
+          <Navbar />
+        </div>
+        <div>
+          <Grid
+            paddingTop="10"
+            templateColumns="repeat(6, 1fr)"
+            marginTop={10}
+            gap={8}
+          >
             <GridItem colStart={2} colEnd={3} h="700" bg="blue.500">
               <Text fontSize="3xl" align="center" color="white" marginTop="10">
                 Newborn Resources
