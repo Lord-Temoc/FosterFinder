@@ -1,9 +1,4 @@
-import Head from "next/head";
-import Navbar from "../components/navbar";
-import EventAccordion from "../components/eventsComponent";
 import { useSession, signIn, signOut } from "next-auth/react";
-import ProfileComponent from "../components/profileComp";
-import { useState } from "react";
 import {
   Box,
   Badge,
@@ -13,55 +8,43 @@ import {
   Grid,
   GridItem,
   Flex,
+  Divider,
+  Button,
 } from "@chakra-ui/react";
+import Resources from "../pages/Resources";
+import styles from "./postinput.module.css";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 
-export default function Resources() {
+export default function GridLayout(props) {
   const { data: session } = useSession();
   if (session) {
     return (
-      <>
-        <div>
-          <ProfileComponent />
-          <Navbar />
-        </div>
-        <div></div>
-      </>
+      <div>
+        <Flex>
+          <Wrap float="right" position="absolute" right="600" top="100">
+            <WrapItem>
+              <Center w="180px" h="80px" bg="red.200">
+                Box 1
+              </Center>
+            </WrapItem>
+            <WrapItem>
+              <Center w="180px" h="80px" bg="green.200">
+                Box 2
+              </Center>
+            </WrapItem>
+            <WrapItem>
+              <Center w="180px" h="80px" bg="tomato">
+                Box 3
+              </Center>
+            </WrapItem>
+            <WrapItem>
+              <Center w="180px" h="80px" bg="blue.200">
+                Box 4
+              </Center>
+            </WrapItem>
+          </Wrap>
+        </Flex>
+      </div>
     );
   }
 }
-// export default function Resources(){
-//     return (
-//         <>
-//         <Flex
-//             pos='sticky'
-//             left='7'
-//             h='70vh'
-//             marginTop='2.5vh'
-//             boxShadow='0 4px 12px 0 rgba(0,0,0, 0.5)'
-//             w='150px'
-//             flexDir='column'
-//             justifyContents='space-between'
-//             backgroundColor='blue'
-//         >
-//             <Flex>
-//                 <Heading mt = {4} alignContent="center"> Icons </Heading>
-//             </Flex>
-//             <Flex
-//                 p='5%'
-//                 flexDir = 'column'
-//                 w = '100%'
-//                 alignText = 'flex-start'
-//                 mb={4}
-//             >
-
-//                 <Divider/>
-//                 <Flex>
-//                     <NavItem/>
-//                 </Flex>
-
-//             </Flex>
-//         </Flex>
-
-//         </>
-//     )
-// }
