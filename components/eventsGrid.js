@@ -13,7 +13,7 @@ export default function EventsGrid() {
   return (
     <div>
       <Box position="fixed" width="60%" top="20%" marginLeft="20%">
-        <Grid templateColumns="repeat(5, 2fr)" gap={6}>
+        <Grid templateColumns="repeat(2, 2fr)" gap={6}>
           <GridItem
             borderRadius={"15"}
             w="100%"
@@ -22,7 +22,7 @@ export default function EventsGrid() {
             textAlign={"center"}
             textColor="white"
           >
-            <Button onClick={onToggle}>(props.text)</Button>
+            Event 1
             <Fade in={isOpen}>
               <Box
                 p="40px"
