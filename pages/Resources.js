@@ -7,32 +7,24 @@ import ProfileComponent from "../components/profileComp";
 import PostInput from "../components/postinput";
 import { useState } from "react";
 import { Box } from "@chakra-ui/react";
+import PostView from "../components/postview";
 
-if (session) {
-  return (
-    <>
-      <div>
-        <ProfileComponent />
-        <Navbar />
-      </div>
-      <div>
-        <PostInput name={session?.user.name} />
-      </div>
-    </>
-  );
-}
+
 
 export default function Resources() {
   
   const { data: session } = useSession();
 
-  return (
-    
-    <>
-      <div>
-            <ProfileComponent />
-            <Navbar />
-      </div>
+  if (session) {
+    return (
+      <>
+        <div>
+          <ProfileComponent />
+          <Navbar />
+        </div>
+        <div>
+          <PostInput name={session?.user.name} />
+        </div>
       <div>
 
             <PostView name={session?.user.name} />
@@ -50,6 +42,7 @@ export default function Resources() {
       <Box bg="tomato" w="25%" p={10} color="white">
         Box 4
       </Box>
-    </>
-  );
+      </>
+    );
+  }
 }
