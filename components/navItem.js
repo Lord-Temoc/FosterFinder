@@ -47,8 +47,7 @@ export default function NavItem() {
       <Flex mt={30} flexDir="column" w="100%">
         <Flex>
           <div class="btn-group">
-            <Popover>
-              <PopoverTrigger PopoverTrigger="hover">
+
                 <Button
                   onClick={() => Router.push("/")}
                   width={125}
@@ -58,13 +57,6 @@ export default function NavItem() {
                 >
                   Home
                 </Button>
-              </PopoverTrigger>
-              <PopoverContent>
-                <PopoverArrow />
-                <PopoverCloseButton />
-                <PopoverHeader>Home</PopoverHeader>
-              </PopoverContent>
-            </Popover>
 
             <div>
               <Button
